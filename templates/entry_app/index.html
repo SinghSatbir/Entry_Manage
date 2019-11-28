@@ -20,10 +20,10 @@
             </div>
             <div class="col-md-6" style="color:rgb(255,255,255);">
                 <h1 style="font-size:30px;color:rgb(255,255,255);">Current Host</h1>
-
+                    {%  if a_host %}
                     <h5>Name : {{ a_host.name }}, Email : {{ a_host.email }}</h5>
                      <br>
-
+                    {%  endif %}
             </div>
             </div>
         </div>
