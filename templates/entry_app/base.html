@@ -18,14 +18,14 @@
 <body style="background-color: black;">
     <div>
         <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:transparent;color:rgb(255,255,255);">
-            <div class="container"><a class="navbar-brand" href="#">Entry Manage</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="{% url 'index' %}">Entry Manage</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(255,255,255);">Visitor Checkin</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(255,255,255);">Visitor Checkout</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(255,255,255);">Host Entry</a></li>
-                    </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="#">Admin</a></span></div>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'vf' %}" style="color:rgb(255,255,255);">Visitor Checkin</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'co' %}" style="color:rgb(255,255,255);">Visitor Checkout</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hf' %}" style="color:rgb(255,255,255);">Host Entry</a></li>
+                    </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="/admin">Admin</a></span></div>
             </div>
         </nav>
         {% block body %}

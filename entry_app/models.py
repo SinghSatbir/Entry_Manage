@@ -7,6 +7,9 @@ class Visitor(models.Model):
     email = models.EmailField(max_length=264)
     phone = models.CharField(max_length=15, unique=True)
     check_in = models.DateTimeField(auto_now_add=True)
+    hostname = models.CharField(max_length=128)
+    check_out = models.DateTimeField(auto_now=True)
+
 
     def __str__(self):
         return self.name + " " + self.email

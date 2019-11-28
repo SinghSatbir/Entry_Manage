@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block head %}
     <meta charset="UTF-8">
-    <title>Visitor</title>
+    <title>Host</title>
 
 {% endblock %}
 
 {% block body %}
-    <div id="vfbox" style="color: white;padding:10%;">
-<h2>Welcome to the Visitor Checkin</h2>
+    <div id="hfbox" style="color: white;padding:10%;">
+<h2>Checkout Here</h2>
 <form method="post">
     {{ form_full.as_p }}
     {% csrf_token %}
