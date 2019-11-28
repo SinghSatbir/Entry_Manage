@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head %}
+    <meta charset="UTF-8">
+    <title>Host</title>
+
+{% endblock %}
+
+{% block body %}
+    <div id="hfbox" style="color: white;padding:10%;">
+<h2>Welcome to the Host Form</h2>
+<form method="post">
+    {{ form_full.as_p }}
+    {% csrf_token %}
+    <input name="Submits" type="submit">
+</form>
+</div>
+
+{% endblock %}

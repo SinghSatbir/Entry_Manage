@@ -22,8 +22,6 @@ from entry_app import views
 urlpatterns = [
     path('hform',views.hosts_form,name='hf'),
     path('vform', views.visitor_form,name='vf'),
-    path('hnames', views.hosts_names,name='hn'),
-    path('vnames', views.visitor_names,name='vn'),
     path('checkout', views.visitor_checkout,name='co'),
     path('', views.index,name='index')
 

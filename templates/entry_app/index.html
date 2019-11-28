@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head %}
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Home</title>
 
-</body>
-</html>
+{% endblock %}
+
+{% block body %}
+
+    <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="color:rgb(255,255,255);">
+                <h1 style="font-size:30px;color:rgb(255,255,255);">VIsitors List</h1>
+                <p>Items</p>
+            </div>
+            <div class="col-md-6">
+                <h1 style="font-size:30px;color:rgb(255,255,255);">Hosts List</h1>
+                <p style="color:rgb(255,255,255);">Items</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
