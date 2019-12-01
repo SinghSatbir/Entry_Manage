@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block body %}
-    <div id="hfbox" style="color: white;padding:10%;">
+    <div id="container" style="color: white;">
 <h2>Welcome to the Host Form</h2>
 <form method="post">
-    
+
     {{ form_full.as_p }}
     {% csrf_token %}
     <input name="Submits" type="submit">

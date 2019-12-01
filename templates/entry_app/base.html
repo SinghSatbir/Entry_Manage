@@ -15,10 +15,10 @@
     {% endblock %}
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: #2F0902;background-image: url('https://drive.google.com/uc?id=1lP_lpxQOVujXE1jbz-ur69gKjD6AOidc');background-size: cover; background-attachment: fixed" >
     <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:transparent;color:rgb(255,255,255);">
-            <div class="container"><a class="navbar-brand" href="{% url 'index' %}">Entry Manage</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:transparent;color:rgb(255,255,255);margin-bottom: 8%">
+            <div class="container"><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="{% url 'index' %}">Entry Manage</a></span><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav mr-auto">
@@ -28,9 +28,11 @@
                     </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="/admin">Admin</a></span></div>
             </div>
         </nav>
+        <div class="paren" style="display: flex;justify-content: center;align-items: center;">
         {% block body %}
 
         {% endblock %}
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
