@@ -6,13 +6,15 @@
 {% endblock %}
 
 {% block body %}
-    <div id="hfbox" style="color: white;padding:10%;">
-<h2>Checkout Here</h2>
-<form method="post">
-    {{ form_full.as_p }}
-    {% csrf_token %}
-    <input name="Submits" type="submit">
-</form>
-</div>
+
+        <div id="checkoutbox" style="color: white;padding:10%;">
+                <h2>Visitor checkout here</h2>
+
+    <form method="post">
+        {{ form_full.as_p }}
+        {% csrf_token %}
+        <input name="Submits" type="submit">
+    </form>
+    </div>
 
 {% endblock %}

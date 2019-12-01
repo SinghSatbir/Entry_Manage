@@ -89,7 +89,7 @@ def visitor_form(request):
     return HttpResponse(template.render(context, request))
 
 def visitor_checkout(request):
-    template = loader.get_template('vform.html')
+    template = loader.get_template('checkout.html')
     form_object = Checkout()
     if request.method == 'POST':
         form_object = Checkout(request.POST)
